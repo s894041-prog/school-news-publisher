@@ -1,0 +1,19 @@
+# 機密與個資
+.env
+.env.*
+*.local
+secrets.*
+
+# 公文與暫存檔（含個資，絕不上傳）
+暫存/
+*.pdf
+*.odt
+*.ods
+*.docx
+*.xlsx
+
+# Claude 個人設定
+.claude/
+settings.local.json
+CLAUDE.local.md
+__pycache__/

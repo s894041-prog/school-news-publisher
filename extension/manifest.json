@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "校園公告一鍵發布小幫手",
+  "version": "4.1",
+  "description": "自動填入教務處、公開、公告內容並一鍵插入下載附件",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://school.tc.edu.tw/open-news/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "world": "MAIN",
+      "run_at": "document_idle"
+    }
+  ]
+}
